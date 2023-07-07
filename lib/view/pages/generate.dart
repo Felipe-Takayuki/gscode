@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qr_codegs/view/widgets/appbar_func.dart';
 import 'package:qr_codegs/view/widgets/textformwidget.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'dart:developer';
@@ -28,12 +29,7 @@ class _GeneratePageState extends State<GeneratePage> {
             
              child: Column(
               children: [
-                Row(
-                  children: [
-                    Icon(Icons.qr_code, size:height * 10/100, color:const Color.fromRGBO(59, 103, 109, 1) ,), //rgba(59, 103, 109, 1)
-                     Text("gerador", style: TextStyle(color:  Color.fromRGBO(59, 103, 109, 1), fontSize: height * 3/100, fontWeight: FontWeight.bold), )
-                  ],
-                ),
+               AppBarFuncWidget(icon: Icons.qr_code, size: height, title: "gerador",),
                 SizedBox(height: height * 10/100,),
                  Text("o seu qrcode", style: TextStyle(color: Color.fromRGBO(105, 103, 36, 1), fontSize: height * 3/100 ),),//rgba(105, 103, 36, 1)
                 QrImageView(data:a , size: height * 30/100 , backgroundColor: const Color.fromRGBO(217, 217, 217, 1), ),
