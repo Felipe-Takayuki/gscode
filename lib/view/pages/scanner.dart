@@ -72,11 +72,11 @@ class _ScannerPageState extends State<ScannerPage> {
           child: Column(
             children: [
               AppBarFuncWidget(icon: Icons.camera_alt, size: height, title: "scanner"),
-              Spacer(),
-              Text("qrcode: $value", style: TextStyle(color: Color.fromARGB(255, 141, 160, 18), fontSize: height * 3/100),),
-              Spacer(flex: 4,),
+              const Spacer(),
+              Text("qrcode: $value", style: TextStyle(color: const Color.fromARGB(255, 141, 160, 18), fontSize: height * 3/100),),
+              const Spacer(flex: 4,),
               TextButton(onPressed: (){
-                Navigator.of(context).pop(MaterialPageRoute(builder: (context) =>ScannerPage() ));
+                Navigator.of(context).pop(MaterialPageRoute(builder: (context) => ScannerPage() ));
               }, child: const Text("voltar a tela inicial", style: TextStyle(color: Colors.green),)),
             ],
           ),

@@ -31,7 +31,7 @@ class _GeneratePageState extends State<GeneratePage> {
               children: [
                AppBarFuncWidget(icon: Icons.qr_code, size: height, title: "gerador",),
                 SizedBox(height: height * 10/100,),
-                 Text("o seu qrcode", style: TextStyle(color: Color.fromRGBO(105, 103, 36, 1), fontSize: height * 3/100 ),),//rgba(105, 103, 36, 1)
+                 Text("o seu qrcode", style: TextStyle(color: const Color.fromRGBO(105, 103, 36, 1), fontSize: height * 3/100 ),),//rgba(105, 103, 36, 1)
                 QrImageView(data:a , size: height * 30/100 , backgroundColor: const Color.fromRGBO(217, 217, 217, 1), ),
                SizedBox(height: height * 10/100,),
                 Row(
